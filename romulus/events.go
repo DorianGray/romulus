@@ -1,6 +1,7 @@
 package romulus
 
 import (
+	"os"
 	"fmt"
 
 	"github.com/cenkalti/backoff"
@@ -64,7 +65,8 @@ func event(r *Registrar, e Event) error {
 	logf(e).Debug("Got a kubernetes API event")
 	switch e.Type {
 	default:
-		logf(e).Debugf("Unsupported event type")
+		logf(e).Error("Unsupported event type")
+		os.Exit(1)
 		return nil
 	case watch.Error:
 		if a, ok := e.Object.(*api.Status); ok {
