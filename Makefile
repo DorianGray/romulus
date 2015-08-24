@@ -1,4 +1,4 @@
-PROJECT = github.com/timelinelabs/romulus
+PROJECT = github.com/DorianGray/romulus
 REV ?= $$(git rev-parse --short=8 HEAD)
 BRANCH ?= $$(git rev-parse --abbrev-ref HEAD | tr / _)
 EXECUTABLE = "romulusd"

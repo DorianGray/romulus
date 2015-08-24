@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/timelinelabs/romulus",
+	"ImportPath": "github.com/DorianGray/romulus",
 	"GoVersion": "go1.4.2",
 	"Packages": [
 		"./..."

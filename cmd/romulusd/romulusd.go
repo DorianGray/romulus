@@ -9,7 +9,7 @@ import (
 
 	l "github.com/Sirupsen/logrus"
 	"github.com/ghodss/yaml"
-	"github.com/timelinelabs/romulus/romulus"
+	"github.com/DorianGray/romulus/romulus"
 	"golang.org/x/net/context"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
